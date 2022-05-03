@@ -1,5 +1,7 @@
 # Counterfactual Generative Networks #
 
+A project to extend the work and methodology of Sauer & Greiger (2021) to a fashion-invariant facial-image based gender recognition task. This work takes place in the context of [UvA's Deep Learning II course](https://uvadl2c.github.io/).
+
 #### [[Project]](https://sites.google.com/view/counterfactual-generation/home) [[PDF]](https://openreview.net/pdf?id=BXewfAYMmJw) [[Blog]](https://autonomousvision.github.io/cgn/) [[Music Video]](https://youtu.be/JDwaLueR35U) [[Colab]](https://colab.research.google.com/gist/xl-sr/ad93d3918e456fd4cd4aabdcaad87148/generating_counterfactuals.ipynb)
 <img src="media/teaser.gif" width="600">
 
