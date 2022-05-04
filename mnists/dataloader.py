@@ -205,3 +205,12 @@ def get_tensor_dataloaders(dataset, batch_size=64):
                          shuffle=False, pin_memory=True)
 
     return dl_train, dl_test
+
+if __name__ == '__main__':
+    dl_train, dl_test = get_dataloaders('colored_MNIST', batch_size=64, workers=4)
+    print("Colored MNIST")
+    print(f"Train: {len(dl_train.dataset)}, Test: {len(dl_test.dataset)}")
+    batch = next(iter(dl_train))
+    features = batch['ims']
+    labels = batch['labels']
+    print(f"Dims: {features[0].shape}")
