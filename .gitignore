@@ -1,6 +1,7 @@
 mnists/data/*
 !mnists/data/textures/
 imagenet/data/*
+celebA/data/*
 
 imagenet/experiments/*
 !imagenet/experiments/.placeholder
@@ -27,3 +28,4 @@ tags
 !mnists/experiments/cgn_double_colored_MNIST/weights/ckp.pth
 !mnists/experiments/cgn_wildlife_MNIST/weights/ckp.pth
 !imagenet/data/u_fixed.pth
+.DS_Store

@@ -169,8 +169,6 @@ def main_worker(gpu, ngpus_per_node, args):
 
     ### dataloaders
     train_loader, val_loader, train_sampler = get_imagenet_dls(args.distributed, args.batch_size, args.workers)
-    print(f"train_loader: {len(train_loader)}")
-    print(f"val_loader: {len(val_loader)}")
     cf_train_loader, cf_val_loader, cf_train_sampler = get_cf_imagenet_dls(args.cf_data, args.cf_ratio, len(train_loader), args.distributed, args.batch_size, args.workers)
     dl_shape_bias = get_cue_conflict_dls(args.batch_size, args.workers)
     dls_in9 = get_in9_dls(args.distributed, args.batch_size, args.workers, ['mixed_rand', 'mixed_same'])
