@@ -1,10 +1,11 @@
 #!/usr/bin/env bash
 
 # Download Colored MNIST
-gdown https://drive.google.com/u/0/uc?export=download&confirm=rHtT&id=1NSv4RCSHjcHois3dXjYw_PaLIoVlLgXu
+gdown 'https://drive.google.com/u/0/uc?export=download&confirm=rHtT&id=1NSv4RCSHjcHois3dXjYw_PaLIoVlLgXu'
 tar -xzvf colored_mnist.tar.gz
 mv colored_mnist mnists/data
 rm colored_mnist.tar.gz
+rm -rf colored_mnist
 
 # Download BG challenge dataset
 wget https://github.com/MadryLab/backgrounds_challenge/releases/download/data/backgrounds_challenge_data.tar.gz
@@ -19,3 +20,10 @@ git clone https://github.com/rgeirhos/texture-vs-shape/
 mkdir imagenet/data/cue_conflict
 mv texture-vs-shape/stimuli/style-transfer-preprocessed-512/* imagenet/data/cue_conflict
 rm -rf texture-vs-shape
+
+# Download the CelebAMask-HQ dataset
+gdown 'https://drive.google.com/u/0/uc?export=download&confirm=rHtT&id=1badu11NqxGf6qM3PTTooQDJvQbejgbTv'
+tar -xzvf CelebAMask-HQ.zip
+mv CelebAMask-HQ celebA/data
+rm CelebAMask-HQ.zip
+rm -rf CelebAMask-HQ
